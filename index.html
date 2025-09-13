@@ -115,184 +115,38 @@
             </div>
         </section>
         
-        <!-- 项目详情 -->
-        <section class="mb-12 section-fade">
-            <div class="bg-white rounded-xl shadow-md p-6">
-                <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b border-gray-200">
-                    <i class="fa fa-list-alt text-primary mr-2"></i>项目详情
-                </h2>
-                
-                <div class="space-y-6 text-gray-700">
-                    <div>
-                        <h3 id="target" class="text-xl font-semibold text-gray-800 mb-3">设计目标</h3>
-                        <ul class="space-y-2 pl-6">
-                            <li class="flex items-start">
-                                <i class="fa fa-check-circle text-primary mt-1 mr-2"></i>
-                                <span>工作频段：主天线、副天线覆盖700-960MHz & 1710-6000MHz；分集天线覆盖1710-6000MHz</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fa fa-check-circle text-primary mt-1 mr-2"></i>
-                                <span>性能指标：VSWR < 3；效率 > 40%；隔离度 > 10dB</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fa fa-check-circle text-primary mt-1 mr-2"></i>
-                                <span>尺寸限制：74mm × 74mm × 11mm（相比同类产品减少30%体积）</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fa fa-check-circle text-primary mt-1 mr-2"></i>
-                                <span>环境适应性：-40℃ ~ 85℃工作温度范围，满足车载振动标准</span>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div>
-                        <h3 id="research_method" class="text-xl font-semibold text-gray-800 mb-3">技术方案</h3>
-                        <p class="mb-3">
-                            本项目创新性地将类单极子枝节与类缝隙结构地板相结合，形成极化方向在不同频段下的差异性，从而实现天线间的极化垂直以及低互耦：
-                        </p>
-                        
-                        <!-- 图片展示区 -->
-                        <div class="grid md:grid-cols-2 gap-6 my-6">
-                            <div class="img-container">
-                                <img src="file/1.bmp" alt="天线结构设计图1" class="w-full h-auto">
-                                <div class="p-3 bg-gray-50 text-center text-sm text-gray-600">
-                                    图1：天线结构设计示意图
-                                </div>
-                            </div>
-                            <div class="img-container">
-                                <img src="file/structureChange.png" alt="工作原理" class="w-full h-auto">
-                                <div class="p-3 bg-gray-50 text-center text-sm text-gray-600">
-                                    图2：结构演变
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <ul class="space-y-2 pl-6">
-                            <li class="flex items-start">
-                                <i class="fa fa-angle-right text-primary mt-1 mr-2"></i>
-                                <span>类单极子与类缝隙辐射结构的结合，实现多频段宽带的工作</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fa fa-angle-right text-primary mt-1 mr-2"></i>
-                                <span>特殊的设计使得极化方向在不同频段存在差异</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fa fa-angle-right text-primary mt-1 mr-2"></i>
-                                <span>4单元MIMO紧凑化且相邻天线极化正交，实现低互耦的效果</span>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div>
-                        <h3 id="test_results" class="text-xl font-semibold text-gray-800 mb-3">测试结果</h3>
-                        
-                        <!-- 1. 图片展示区域：可放1张总览图或多张分指标图，支持响应式 -->
-                        <div class="bg-white rounded-lg shadow-md p-4 mb-4">
-                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                                <!-- 第一张图：VSWR测试结果（示例，可根据实际图片数量增减） -->
-                                <div class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-                                    <img src="your-vswr-image-path.jpg"  
-                                         alt="VSWR测试结果图" 
-                                         class="w-full h-48 object-cover"  <!-- 固定高度，图片自适应不拉伸 -->
-                                         loading="lazy">  <!-- 懒加载，提升页面加载速度 -->
-                                    <div class="p-3 text-center text-sm font-medium text-gray-700">
-                                        VSWR测试结果
-                                    </div>
-                                </div>
-                    
-                                <!-- 第二张图：效率测试结果 -->
-                                <div class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-                                    <img src="your-efficiency-image-path.jpg"  
-                                         alt="天线效率测试结果图" 
-                                         class="w-full h-48 object-cover"
-                                         loading="lazy">
-                                    <div class="p-3 text-center text-sm font-medium text-gray-700">
-                                        天线效率测试结果
-                                    </div>
-                                </div>
-                    
-                                <!-- 第三张图：隔离度测试结果 -->
-                                <div class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-                                    <img src="your-isolation-image-path.jpg"  
-                                         alt="天线隔离度测试结果图" 
-                                         class="w-full h-48 object-cover"
-                                         loading="lazy">
-                                    <div class="p-3 text-center text-sm font-medium text-gray-700">
-                                        天线隔离度测试结果
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-    <!-- 2. 底部文字解释区域：补充图片未体现的关键信息 -->
-    <div class="bg-gray-50 rounded-lg p-4 text-gray-700 text-sm leading-relaxed">
-        <p class="mb-2"><strong class="text-gray-800">测试说明：</strong>上述图片分别展示了车载5G MIMO天线在VSWR（电压驻波比）、辐射效率、天线间隔离度三个核心指标的实测数据图表，测试环境为标准微波暗室，测试设备采用Agilent N5247A矢量网络分析仪。</p>
-        <p class="mb-2"><strong class="text-gray-800">关键结论：</strong>1. VSWR实测值为2.2-2.8，低于设计目标（&lt;3），信号传输反射损耗小；2. 天线效率达45-58%，高于目标值（&gt;40%），能量辐射能力优异；3. 隔离度为15-22dB，远优于目标（&gt;10dB），有效避免多天线间信号干扰。</p>
-        <p><strong class="text-gray-800">备注：</strong>所有测试数据均经过3次重复验证，误差控制在±0.5dB内，结果具备可靠性，可支撑后续产品化落地。</p>
-    </div>
-</div>
-                    
-                    <div>
-                        <h3 id="results" class="text-xl font-semibold text-gray-800 mb-3">项目成果</h3>
-                        <ul class="space-y-2 pl-6">
-                            <li class="flex items-start">
-                                <i class="fa fa-trophy text-yellow-500 mt-1 mr-2"></i>
-                                <span>以第一作者发表论文于IEEE AWPL（Q2期刊）</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fa fa-trophy text-yellow-500 mt-1 mr-2"></i>
-                                <span>技术方案转化为发明专利"一种集成式低剖面5G天线"（CN202411549247.9）</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fa fa-trophy text-yellow-500 mt-1 mr-2"></i>
-                                <span>项目通过企业验收，已进入产品化阶段</span>
-                            </li>
-                        </ul>
-                    </div>
+    <!-- 项目详情 -->
+    <section class="mb-12 section-fade">
+        <div class="bg-white rounded-xl shadow-md p-6">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b border-gray-200">
+                <i class="fa fa-list-alt text-primary mr-2"></i>项目详情
+            </h2>
+    
+            <!-- 新增：三张图片容器（Flex 布局） -->
+            <div class="project-images flex flex-wrap gap-4 mb-2">
+                <!-- 图片 1 -->
+                <div class="image-item flex-1 min-w-[280px]">
+                    <img src="file/py1.png" 
+                         alt="项目相关描述1（如：项目现场图）" 
+                         class="w-full h-auto rounded-lg shadow-sm object-cover">
+                </div>
+                <!-- 图片 2 -->
+                <div class="image-item flex-1 min-w-[280px]">
+                    <img src="file/py2.png" 
+                         alt="项目相关描述2（如：产品展示图）" 
+                         class="w-full h-auto rounded-lg shadow-sm object-cover">
+                </div>
+                <!-- 图片 3 -->
+                <div class="image-item flex-1 min-w-[280px]">
+                    <img src="file/py3.png" 
+                         alt="项目相关描述3（如：成果示意图）" 
+                         class="w-full h-auto rounded-lg shadow-sm object-cover">
                 </div>
             </div>
-        </section>
+    
+        </div>
+    </section>
         
-        <!-- 项目文档与资源 -->
-        <section class="mb-12 section-fade">
-            <div class="bg-white rounded-xl shadow-md p-6">
-                <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b border-gray-200">
-                    <i class="fa fa-file-text-o text-primary mr-2"></i>相关资源
-                </h2>
-                
-                <div class="grid md:grid-cols-3 gap-4">
-                    <a href="#" class="flex items-center p-4 border border-gray-100 rounded-lg hover:bg-gray-50 transition-colors group">
-                        <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors">
-                            <i class="fa fa-file-pdf-o text-primary text-xl"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-medium text-gray-800">项目技术报告</h3>
-                            <p class="text-sm text-gray-500">PDF, 2.4MB</p>
-                        </div>
-                    </a>
-                    
-                    <a href="#" class="flex items-center p-4 border border-gray-100 rounded-lg hover:bg-gray-50 transition-colors group">
-                        <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors">
-                            <i class="fa fa-file-word-o text-primary text-xl"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-medium text-gray-800">测试数据记录表</h3>
-                            <p class="text-sm text-gray-500">Excel, 1.1MB</p>
-                        </div>
-                    </a>
-                    
-                    <a href="https://ieeexplore.ieee.org/document/10979809" class="flex items-center p-4 border border-gray-100 rounded-lg hover:bg-gray-50 transition-colors group">
-                        <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mr-4 group-hover:bg-primary/20 transition-colors">
-                            <i class="fa fa-external-link text-primary text-xl"></i>
-                        </div>
-                        <div>
-                            <h3 class="font-medium text-gray-800">IEEE论文链接</h3>
-                            <p class="text-sm text-gray-500">在线访问</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
     </main>
 
     <!-- 页脚（与主页面一致） -->
